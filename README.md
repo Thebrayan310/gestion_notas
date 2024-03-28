@@ -1,7 +1,10 @@
 Documentación del Proyecto Gestion de Notas
 
 Introducción
-Esta documentación proporciona información sobre el proyecto "Gestion de Notas", un sistema para administrar y gestionar notas de tareas y procedimientos de mantenimiento.
+
+
+Este proyecto, llamado Gestion Notas, es una aplicación web desarrollada utilizando el framework Django. La aplicación permite a los usuarios gestionar y administrar tareas, incluyendo la capacidad de agregar, modificar y eliminar tareas.
+
 
 
 
@@ -15,13 +18,10 @@ El objetivo de este proyecto es crear una aplicación web que permita a los usua
 
 Características Principales
 
--Registro de tareas con información detallada.
-
--Visualización de todas las tareas registradas.
-
--Modificación y eliminación de tareas existentes.
-
--Interfaz intuitiva y fácil de usar.
+1.	Registro de tareas con información detallada.
+2.	Visualización de todas las tareas registradas.
+3.	Modificación y eliminación de tareas existentes.
+4.	Interfaz intuitiva y fácil de usar.
 
 
 
@@ -29,76 +29,102 @@ Características Principales
 
 Requisitos del Sistema
 
+•	Python 3.x
 
--Python 3.x
+•	Django 3.x
 
--Django 3.x
-
--Navegador web compatible con HTML5 y CSS3
-
+•	Navegador web compatible con HTML5 y CSS3
 
 
 
 
 
 
-Instalación y Configuración
+
+Instalación
 
 
-1.Clona el repositorio desde GitHub: git clone https://github.com/usuario/gestion-notas.git
+Para ejecutar este proyecto localmente, sigue estos pasos:
 
-2.Navega al directorio del proyecto: cd gestion-notas
 
-3.Crea y activa un entorno virtual: python -m venv venv (Windows) o python3 -m venv venv (Linux/Mac)
+1.	Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
-4.Instala las dependencias del proyecto: pip install -r requirements.txt
+en el bash
 
-5.Configura las variables de entorno según sea necesario.
+git clone https://github.com/Thebrayan310/gestion_notas.git
 
-6.Realiza las migraciones de la base de datos: python manage.py migrate
+2.	Navega al directorio del proyecto:
 
-7.Inicia el servidor local: python manage.py runserver
+en el bash
 
-8.Accede al proyecto desde tu navegador web: http://127.0.0.1:8000/
+cd gestion_notas
+
+
+
+3.	Crea un entorno virtual para el proyecto:
+
+en el bash
+
+python3 -m venv venv
+
+
+
+
+4.	Activa el entorno virtual:
+
+-En Windows:
+
+en el bash
+venv\Scripts\activate
+
+-En macOS y Linux:
+
+en el bash
+source venv/bin/activate
+
+
+
+
+5.	Instala las dependencias del proyecto:
+
+en el bash
+
+pip install -r requirements.txt
+
+
+
+
+6.	Realiza las migraciones de la base de datos:
+
+en el bash
+
+python manage.py migrate
+
+
+
+
+7.	Inicia el servidor de desarrollo:
+
+en el bash
+
+python manage.py runserver
+
+
+
+8.	Accede a la aplicación en tu navegador web en la siguiente dirección: http://127.0.0.1:8000/
 
 
 
 
 Uso
 
-1.Desde la página principal, podrás visualizar todas las tareas registradas.
+•	Desde la página principal, podrás visualizar todas las tareas registradas.
 
-2.Para agregar una nueva tarea, simplemente haz clic en el botón "Agregar Tarea" y completa el formulario.
+•	Para agregar una nueva tarea, simplemente haz clic en el botón "Agregar Tarea" y completa el formulario.
 
-3.Si necesitas modificar o eliminar una tarea existente, puedes hacerlo haciendo clic en los enlaces correspondientes junto a cada tarea en la lista.
+•	Si necesitas modificar o eliminar una tarea existente, puedes hacerlo haciendo clic en los enlaces correspondientes junto a cada tarea en la lista.
 
-4.¡Explora las diversas funcionalidades y disfruta del sistema sin necesidad de iniciar sesión!
-
-
-
-
-
-Contribución
-
-¡Agradecemos las contribuciones! Si deseas contribuir al proyecto, sigue estos pasos:
-
-
-1.Haz un fork del repositorio.
-
-2.Crea una rama para tu nueva función: git checkout -b nueva-funcion
-
-3.Realiza tus cambios y haz commits: git commit -am 'Agrega nueva función'
-
-4.Haz push a tu rama: git push origin nueva-funcion
-
-5.Crea un pull request en GitHub.
-
-
-
-
-
-
-
+•	¡Explora las diversas funcionalidades y disfruta del sistema sin necesidad de iniciar sesión!
 
 
 
@@ -106,3 +132,4 @@ Contribución
 Créditos
 
 Desarrollador principal: Brayan Stiven Arias Henao
+
