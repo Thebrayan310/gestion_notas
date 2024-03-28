@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="agregar-tarea">Agregar Nueva Tarea</h2>
+<form method="post" action="{% url 'agregar' %}" class="formulario-agregar">
+    {% csrf_token %}
+    <label for="equipo" class="label-tarea">Equipo:</label>
+    <input type="text" id="equipo" name="equipo" required>
+    <label for="fecha_mantenimiento" class="label-tarea">Fecha de mantenimiento:</label>
+    <input type="date" id="fecha_mantenimiento" name="fecha_mantenimiento" required>
+    <label for="procedimiento" class="label-tarea">Procedimiento:</label>
+    <textarea id="procedimiento" name="procedimiento" required></textarea>
+    <input type="submit" value="Agregar tarea" class="btn btn-primary">
+</form>
+
+{% endblock %}

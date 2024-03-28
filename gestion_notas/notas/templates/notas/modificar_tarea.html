@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="{% url 'modificar' tarea.id %}">
+    {% csrf_token %}
+    <label for="equipo">Equipo:</label>
+    <input type="text" id="equipo" name="equipo" value="{{ tarea.equipo }}" required>
+    <label for="fecha_mantenimiento">Fecha de mantenimiento:</label>
+    <input type="date" id="fecha_mantenimiento" name="fecha_mantenimiento" value="{{ tarea.fecha_mantenimiento }}" required>
+    <label for="procedimiento">Procedimiento:</label>
+    <textarea id="procedimiento" name="procedimiento" required>{{ tarea.procedimiento }}</textarea>
+    <input type="submit" value="Guardar cambios">
+</form>
+{% endblock %}
